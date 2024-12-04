@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billing>
+  <customer>
+    <id>78901</id>
+    <name>Sarah Wilson</name>
+    <billing-period>
+      <start>2024-02-01</start>
+      <end>2024-02-29</end>
+    </billing-period>
+  </customer>
+  <charges>
+    <service>
+      <type>Internet</type>
+      <plan>Fiber 500Mbps Premium</plan>
+      <amount>89.99</amount>
+      <usage>
+        <data-used>750GB</data-used>
+        <data-limit>2000GB</data-limit>
+      </usage>
+    </service>
+    <service>
+      <type>Mobile</type>
+      <plan>International Plus</plan>
+      <amount>95.99</amount>
+      <usage>
+        <minutes-used>850</minutes-used>
+        <international-minutes>120</international-minutes>
+        <data-used>22GB</data-used>
+      </usage>
+    </service>
+    <service>
+      <type>TV</type>
+      <plan>Basic Package</plan>
+      <amount>49.99</amount>
+    </service>
+    <late-fees>
+      <fee>
+        <description>Late Payment - January 2024</description>
+        <amount>25.00</amount>
+        <status>Outstanding</status>
+      </fee>
+      <fee>
+        <description>Late Payment - December 2023</description>
+        <amount>25.00</amount>
+        <status>Paid</status>
+      </fee>
+    </late-fees>
+  </charges>
+  <total-amount>285.97</total-amount>
+  <payment-status>Overdue</payment-status>
+  <due-date>2024-02-15</due-date>
+</billing>

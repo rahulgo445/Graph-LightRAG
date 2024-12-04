@@ -1,0 +1,846 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d5" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;TAX&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A Tax entity is applied after discounts and must be validated against Charges, representing government levies on transactions."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="&quot;EMAIL ADDRESS&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Email Address is the primary means through which account statements and communications are delivered to subscribers."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;OUTSTANDING BALANCES&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Outstanding Balances refer to any overdue amounts that a subscriber owes to the service provider, which must be cleared for account reactivation."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;DISCOUNT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A Discount entity is applied to Charges and can vary in type, impacting the overall billing amount for Subscribers."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="&quot;ACCOUNT STATEMENT DELIVERY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Account Statement Delivery describes the process of sending account statements to the primary email address."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;BILLING ARRANGEMENT&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"A Billing Arrangement defines the billing frequency, payment terms, and preferences, impacting how charges and invoices are handled for an Account."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="&quot;REACTIVATION REQUIREMENTS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Reactivation Requirements denote the conditions under which a suspended account may be reactivated, including payment of outstanding amounts."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;CUSTOMER&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"A Customer is an individual or company that purchases services or goods, particularly influenced by promotional offers."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;BILL&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A Bill serves as a container for organizing related Charges, allowing for the consolidation of financial information for an Account."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="&quot;CHARGE TYPE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Charge Types categorize Charges as One-time, Recurring, Usage-based, or Penalty, impacting how financial transactions are processed."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="&quot;BILLING PERIOD&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A Billing Period is the defined timeframe during which Charges are accumulated and billed to the Account."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="&quot;REACTIVATION FEE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Reactivation Fee is a charge applied when a subscriber's account is reactivated after a period of suspension due to non-payment."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;UPGRADE FLEXIBILITY&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Upgrade Flexibility allows existing customers to change their service plans without incurring additional fees."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;RATING EVENT RECORDS (RERS)&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Rating Event Records (RERs) are essential for tracking usage-based Charges and must maintain an audit trail for dispute resolution."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="&quot;DOWNGRADE FEE&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"The Downgrade Fee is a penalty charge applied to customers who change to a less expensive plan before meeting certain conditions."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="SERVICE INSTANCE">
+      <data key="d0">ORGANIZATION</data>
+      <data key="d1">Service Instance refers to a specific instance of a service being provided to a customer, subject to various rating and billing processes.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="DISCOUNT">
+      <data key="d0">EVENT</data>
+      <data key="d1">Discount involves reductions in price based on specified criteria, aimed at providing financial benefits to customers.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="&quot;CREDIT CONTROL&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Credit Control monitors Credit Limits and thresholds for Accounts and Subscribers, impacting authorization decisions."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="BILLING ARRANGEMENT">
+      <data key="d0">ORGANIZATION</data>
+      <data key="d1">Billing Arrangement encompasses the agreements and structured plans that govern billing for services rendered to customers.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="SUBSCRIBER">
+      <data key="d0">PERSON</data>
+      <data key="d1">Subscriber is an individual or entity who has signed up to receive the services specified in the Rate Plan.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="USAGE RATING">
+      <data key="d0">EVENT</data>
+      <data key="d1">Usage Rating involves calculating charges for service based on usage metrics and applying advantageous rates to customers.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="&quot;ADJUSTMENT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"An Adjustment modifies either Charges or Bills, maintaining references to original amounts and ensuring accurate billing practices."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="SERVICE ORDER">
+      <data key="d0">EVENT</data>
+      <data key="d1">Service Order represents a request to activate or modify a service instance, which affects other related entities.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="NETWORK PERFORMANCE">
+      <data key="d0">CONCEPT</data>
+      <data key="d1">Network Performance pertains to the efficiency and effectiveness of network services, which can be measured through various Quality of Service metrics.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="PRODUCT CATALOG">
+      <data key="d0">ORGANIZATION</data>
+      <data key="d1">Product Catalog includes all items and services available for billing and includes detailed information about them.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="&quot;ORIGINAL PRICE&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"The Original Price is the standard price for a service or product prior to any discounts."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="INVOICE">
+      <data key="d0">EVENT</data>
+      <data key="d1">Invoice is a financial document issued to a customer detailing the amounts due for services provided over a billing period.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="CUSTOMER">
+      <data key="d0">PERSON</data>
+      <data key="d1">Customer is an individual or entity that consumes services and is subject to the terms set forth in Rate Plans and Billing Arrangements.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="&quot;CHARGE DISPUTE SUBMISSION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Charge Dispute Submission requires customers to formally dispute charges in writing within a 60-day window."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;CHARGE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A Charge is a financial entity that references a specific Service Instance and Billing Period and can take several types, such as One-time or Recurring."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="PARTNER USAGE RECORDS">
+      <data key="d0">ORGANIZATION</data>
+      <data key="d1">Partner Usage Records are data kept to correlate customer usage with partners for the purpose of revenue sharing and billing adjustments.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="PURGE ELIGIBILITY DATES">
+      <data key="d0">EVENT</data>
+      <data key="d1">Purge Eligibility Dates are specified times after which documents can be deleted according to regulations or business rules.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="CONTRACT">
+      <data key="d0">EVENT</data>
+      <data key="d1">Contract is a formal agreement between a service provider and its customers outlining terms and obligations related to service provision.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="&quot;NON-RETURN FEE&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"The Non-Return Fee is a charge levied on customers for failing to return company equipment."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;ACCOUNT CLOSURE REQUESTS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Account Closure Requests allows customers to request account termination subject to applicable fees."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;SERVICE UPGRADE SCHEDULING&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Service Upgrade Scheduling pertains to setting appointments for upgrading services that require new equipment."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;EMERGENCY MAINTENANCE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Emergency Maintenance refers to urgent service actions undertaken to resolve network issues without prior customer notification."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;DUNNING PROFILE&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"A Dunning Profile is assigned at the Account level to manage collection processes and define rules for past due amounts."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="&quot;OUTAGE SERVICE CREDIT&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Outage Service Credit is a compensation given to customers for service disruptions that exceed a specified duration."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;OUTAGE COMMUNICATIONS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Outage Communications involves informing customers about network outages through various channels like email and SMS."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;REPORTING SERVICE OUTAGES&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Reporting Service Outages urges customers to notify the service provider about service disruptions for timely resolution."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;SUBSCRIBER DATA PRIVACY&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Subscriber Data Privacy ensures that personal data is managed in compliance with privacy laws and company policies."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;RESOURCE SHARING AMONG SUBSCRIBERS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Resource Sharing Among Subscribers indicates that subscribers under the same account share plan resources."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;FORCE MAJEURE EVENTS&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Force Majeure Events are unforeseen circumstances that can affect service delivery and are not subject to compensation."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;ACCOUNT CHANGES AUTHORIZATION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Account Changes Authorization specifies that only the primary subscriber is permitted to make changes like contact updates."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;SERVICE INSTANCE&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"A Service Instance is associated with a Subscriber and generates Charges billed to a Billing Arrangement within the Account."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="&quot;FREQUENCY OF OUTAGE REVIEW&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Frequency of Outage Review is the process through which customers can request an evaluation based on their outage experiences."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;ADDING ADDITIONAL SUBSCRIBERS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Adding Additional Subscribers describes the process where the primary subscriber must authorize additional subscribers to the account."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;MAINTENANCE NOTIFICATIONS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Maintenance Notifications inform customers about scheduled maintenance that may affect service availability."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="REGULATORY REQUIREMENTS">
+      <data key="d0">CONCEPT</data>
+      <data key="d1">Regulatory Requirements refer to legal stipulations governing how billing and document retention are managed.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="&quot;FORCE MAJEURE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Force Majeure refers to unforeseen circumstances that prevent parties from fulfilling contractual obligations, often included in agreements to limit liability."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;OUTAGE COMPENSATION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Outage Compensation is a provision in customer contracts that dictates the conditions under which customers may receive compensation for service outages."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="LATE PAYMENT FEE">
+      <data key="d0">EVENT</data>
+      <data key="d1">Late Payment Fee is a charge applied for overdue payments, calculated based on outstanding balances.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="&quot;NETWORK CAPACITY MONITORING&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Network Capacity Monitoring ensures that the network can handle user demands effectively."&lt;SEP&gt;"Network Capacity Monitoring involves continuously checking network capacity to ensure optimal service quality."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492&lt;SEP&gt;chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;FORCE MAJEURE EXCLUSION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Force Majeure Exclusion refers to a provision that excludes outage compensation for events classified as force majeure."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;INVOICE LINE ITEM&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Invoice Line Items feature details of individual Charges, including applied Discounts, Taxes, and adjustments made to the final invoice."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="REVENUE SHARING CALCULATIONS">
+      <data key="d0">EVENT</data>
+      <data key="d1">Revenue Sharing Calculations determine how income from services is distributed between partners based on usage records and agreements.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="&quot;SLA&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Service Level Agreement (SLA) parameters track service quality at the Service Instance level and define any credits for violations."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="AUDIT PURPOSES">
+      <data key="d0">CONCEPT</data>
+      <data key="d1">Audit Purposes relate to the need for accurate and transparent record-keeping for financial examinations and accountability.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="&quot;NETWORK SPECIFICATIONS&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Network Specifications encompass the technical requirements that customer equipment must meet to ensure compatibility with the service provider's network."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;SUBSCRIBER MANAGEMENT&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Subscriber Management refers to the overall administration and handling of accounts and subscribers under a telecommunications framework."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;SERVICE PLANS&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Service Plans refer to the various subscription options available for customers, each with different pricing and features."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;CONTRACT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"A Contract is a formal agreement between the service provider and the customer outlining terms of service."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;PROMOTIONAL OFFERS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Promotional Offers are limited-time deals provided to customers to encourage sign-ups or upgrades."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;BUSINESS SLAS&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Business SLAs are agreements that set specific service expectations and guarantees for business customers."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;NETWORK PERFORMANCE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Network Performance entities provide metrics that correlate with Quality of Service evaluations for Service Instances."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="&quot;NON-PAYMENT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Non-Payment describes the situation wherein a subscriber fails to make necessary payments on time, leading to potential account suspension."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="RATE PLAN">
+      <data key="d0">CONCEPT</data>
+      <data key="d1">Rate Plan refers to a structured pricing model that defines the costs and billing strategies associated with service usage for customers.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="&quot;BUNDLE PRICING DISCOUNTS&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Bundle Pricing Discounts are price reductions offered when multiple services are activated simultaneously."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;PROMOTIONAL PERIOD&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"The Promotional Period is a defined time frame during which special offers are available to customers."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;PRIMARY SUBSCRIBER RESPONSIBILITY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Primary Subscriber Responsibility involves designated individuals being accountable for charges and account management."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;EQUIPMENT COMPATIBILITY&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Equipment Compatibility pertains to the requirement that customers use devices that meet specific network specifications."&lt;SEP&gt;"Equipment Compatibility refers to the requirement that customers must use devices that are compatible with the service provider’s network specifications."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492&lt;SEP&gt;chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;REFERRAL CREDIT&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Referral Credits are incentives provided to customers for bringing in new customers."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;DEVICE UPGRADE ELIGIBILITY&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Device Upgrade Eligibility outlines the criteria that must be met for customers to receive a device upgrade."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;INSTALLATION SCHEDULING&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Installation Scheduling refers to the process of arranging service installations within a specified time frame."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;SERVICE AVAILABILITY DEPENDENCE&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Service Availability Dependence indicates that the provision of services is reliant on the coverage of the network in specific areas."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;MISSED APPOINTMENT CREDIT&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"The Missed Appointment Credit is compensation provided to customers if a technician fails to show up for a scheduled installation."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;DISPUTE SUBMISSION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Dispute Submission is the process by which subscribers formally contest charges issued on their account, following specific guidelines."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;PRIVACY LAWS&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"Privacy Laws are regulations that govern the handling of personal data, requiring companies to protect subscriber information."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;EARLY TERMINATION FEE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Early Termination Fee is a penalty imposed on subscribers who choose to cancel their service before the end of their contract."&lt;SEP&gt;"The Early Termination Fee is a charge incurred by customers who cancel their service before the end of their contract term."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492&lt;SEP&gt;chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="&quot;WARRANTY REPAIRS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Warranty Repairs are service actions provided at no extra cost to customers for equipment failures covered under warranty."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;ACCOUNT&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"An Account represents a primary billing relationship, which can have multiple Subscribers and is essential for billing management."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="&quot;EQUIPMENT RETURN POLICY&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"The Equipment Return Policy outlines the obligations of customers to return company equipment upon cancellation of services."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="RESOURCE TYPE">
+      <data key="d0">CONCEPT</data>
+      <data key="d1">Resource Type categorizes resources within Resource Management, influencing their handling and recycling according to specific rules.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="REFUND">
+      <data key="d0">EVENT</data>
+      <data key="d1">Refund is a reimbursement made to a customer when an error has occurred affecting billing amounts.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="RATE PLAN ADJUSTMENTS">
+      <data key="d0">EVENT</data>
+      <data key="d1">Rate Plan Adjustments involve changes made to a customer's Rate Plan, including the application of different pricing rules or conditions.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="QUOTA MANAGEMENT">
+      <data key="d0">EVENT</data>
+      <data key="d1">Quota Management involves overseeing the usage limits set within service agreements and ensuring compliance.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="&quot;SUBSCRIBER&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"A Subscriber is a member linked to an Account that maintains its own Service Profile and contributes to charge consolidation under the Account."</data>
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </node>
+    <node id="BILLING CYCLES">
+      <data key="d0">EVENT</data>
+      <data key="d1">Billing Cycles represent the time periods in which billing activities such as invoicing and payment processing take place.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="&quot;ACCOUNT SUSPENSION FOR NON-PAYMENT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Account Suspension for Non-Payment refers to the potential action of suspending accounts after 30 days of non-payment."</data>
+      <data key="d2">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </node>
+    <node id="QUOTA PERIODS">
+      <data key="d0">EVENT</data>
+      <data key="d1">Quota Periods define timelines for assessing usage against established limits in service agreements.</data>
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </node>
+    <node id="&quot;DISCOUNTED PRICE&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"The Discounted Price is the reduced amount a customer pays after applying a specific discount to the original price."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;FORMULA&quot;">
+      <data key="d0">"CONCEPT"</data>
+      <data key="d1">"The Formula outlines the calculation used to determine the discounted price a customer pays based on the original price and discount rate."</data>
+      <data key="d2">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </node>
+    <node id="&quot;SERVICE PROFILE&quot;">
+      <data key="d2">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+      <data key="d1">"Each Subscriber maintains a Service Profile that defines their unique service configurations and preferences."&lt;</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <node id="RESOURCE INVENTORY">
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+      <data key="d1">Resource Inventory maintains records of all resources tied to Service Instances, allowing for effective management and tracking.</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <node id="DOCUMENT">
+      <data key="d2">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+      <data key="d1">Purge Eligibility Dates determine when specific documents, such as invoices or contracts, can be removed from the system, aiding in compliance.</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <edge source="&quot;TAX&quot;" target="&quot;CHARGE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Each Charge must reference applicable Taxes that apply to it after Discounts have been applied, representing compliance with tax laws."&lt;</data>
+      <data key="d5">"financial obligation, compliance"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="&quot;EMAIL ADDRESS&quot;" target="&quot;ACCOUNT STATEMENT DELIVERY&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Email Address is critical for Account Statement Delivery, as statements are sent to the specified primary email address."&lt;</data>
+      <data key="d5">"communication method, subscriber engagement"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;DISCOUNT&quot;" target="&quot;CHARGE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"A Charge may have Discounts applied, affecting the final billing amount for the Subscriber."&lt;</data>
+      <data key="d5">"financial adjustment, cost deduction"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="&quot;ACCOUNT STATEMENT DELIVERY&quot;" target="&quot;SUBSCRIBER DATA PRIVACY&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Account Statement Delivery involves handling personal data, necessitating compliance with Subscriber Data Privacy policies."&lt;</data>
+      <data key="d5">"data handling, compliance"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;BILLING ARRANGEMENT&quot;" target="&quot;ACCOUNT&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"A Billing Arrangement is associated with an Account, defining its payment terms and how invoices are delivered."&lt;</data>
+      <data key="d5">"billing structure, payment terms"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="&quot;REACTIVATION REQUIREMENTS&quot;" target="&quot;ACCOUNT SUSPENSION FOR NON-PAYMENT&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Account Suspension for Non-Payment leads directly to the need for Reactivation Requirements as suspended accounts must fulfill certain conditions for reactivation."&lt;</data>
+      <data key="d5">"account status, reactivation"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;REACTIVATION REQUIREMENTS&quot;" target="&quot;REACTIVATION FEE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Reactivation Requirements often include the payment of a Reactivation Fee, linking both conditions for account reactivation."&lt;</data>
+      <data key="d5">"reactivation conditions, service continuity"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;DOWNGRADE FEE&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The Downgrade Fee impacts customers who change to a cheaper plan before the specified time frame.""</data>
+      <data key="d5">"cost implications, customer decisions"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;REFERRAL CREDIT&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Customers benefit from Referral Credits when they successfully refer new clients.""</data>
+      <data key="d5">"incentives, marketing"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;MAINTENANCE NOTIFICATIONS&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Maintenance Notifications are crucial for keeping the customer aware of potential service interruptions due to maintenance work.""</data>
+      <data key="d5">"customer service, transparency"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;SERVICE PLANS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Service Plans define the options available to customers for selecting the service that best meets their needs.""</data>
+      <data key="d5">"customer choice, service options"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;OUTAGE COMMUNICATIONS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Outage Communications are directed at customers to keep them informed about disruptions.""</data>
+      <data key="d5">"information dissemination, customer service"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;FREQUENCY OF OUTAGE REVIEW&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"Customers can request a review of their service in response to frequent outages indicating service reliability issues.""</data>
+      <data key="d5">"service quality, customer feedback"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;INSTALLATION SCHEDULING&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"The customer is integral to Installation Scheduling as they must be present for the installation process.""</data>
+      <data key="d5">"service delivery, customer involvement"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;PROMOTIONAL PERIOD&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Customers are influenced by the Promotional Period to take advantage of discounts and special offers.""</data>
+      <data key="d5">"promotions, customer engagement"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;PROMOTIONAL OFFERS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Customers can take advantage of Promotional Offers to lower their service costs.""</data>
+      <data key="d5">"marketing strategy, cost savings"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;OUTAGE SERVICE CREDIT&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Outage Service Credit is issued to customers affected by extended service outages.""</data>
+      <data key="d5">"service reliability, compensation"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;CONTRACT&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"The Contract binds the customer to the specific service terms and conditions agreed upon during sign-up.""</data>
+      <data key="d5">"agreement, service terms"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;EQUIPMENT COMPATIBILITY&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Customers are required to utilize equipment that is compatible with the network to ensure optimal functionality.""</data>
+      <data key="d5">"service requirements, operational efficiency"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;MISSED APPOINTMENT CREDIT&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Customers are entitled to a Missed Appointment Credit when a technician fails to carry out a scheduled installation.""</data>
+      <data key="d5">"service reliability, compensation"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;BILL&quot;" target="&quot;BILLING PERIOD&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"A Bill is associated with a specific Billing Period, consolidating Charges accumulated within that timeframe."&lt;</data>
+      <data key="d5">"billing cycle, time management"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="&quot;BILL&quot;" target="&quot;CHARGE&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"A Bill is comprised of multiple Charges, organizing them together under the billing period and service instance referenced."&lt;</data>
+      <data key="d5">"organization, financial structuring"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="&quot;CHARGE TYPE&quot;" target="&quot;CHARGE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Each Charge must have a defined Charge Type, which determines how it is billed and categorized."&lt;</data>
+      <data key="d5">"financial categorization, billing structure"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="&quot;UPGRADE FLEXIBILITY&quot;" target="&quot;DOWNGRADE FEE&quot;">
+      <data key="d3">5.0</data>
+      <data key="d4">"Upgrade Flexibility serves to encourage customers to change plans without penalty, contrasting with Downgrade Fees.""</data>
+      <data key="d5">"service terms, customer options"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;RATING EVENT RECORDS (RERS)&quot;" target="&quot;CHARGE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Usage-based Charges link to specific Rating Event Records, providing a trail for validation and dispute resolution."&lt;</data>
+      <data key="d5">"usage tracking, auditing"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="SERVICE INSTANCE" target="NETWORK PERFORMANCE">
+      <data key="d3">8.0</data>
+      <data key="d4">Service Instances are evaluated based on their performance metrics which directly impact Network Performance assessments.</data>
+      <data key="d5">service effectiveness, metrics</data>
+      <data key="d6">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </edge>
+    <edge source="SERVICE INSTANCE" target="SERVICE ORDER">
+      <data key="d3">9.0</data>
+      <data key="d4">Service Orders directly affect Service Instances by initiating changes or activations of service offerings.</data>
+      <data key="d5">service activation, modification</data>
+      <data key="d6">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </edge>
+    <edge source="SERVICE INSTANCE" target="RESOURCE INVENTORY">
+      <data key="d3">8.0</data>
+      <data key="d4">Resource Inventory maintains records of all resources tied to Service Instances, allowing for effective management and tracking.</data>
+      <data key="d5">resource management, tracking</data>
+      <data key="d6">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </edge>
+    <edge source="DISCOUNT" target="CUSTOMER">
+      <data key="d3">8.0</data>
+      <data key="d4">Discounts are applied to charges for Customers who meet specified criteria, enhancing the affordability of services.</data>
+      <data key="d5">financial benefit, customer incentive</data>
+      <data key="d6">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </edge>
+    <edge source="BILLING ARRANGEMENT" target="REGULATORY REQUIREMENTS">
+      <data key="d3">8.0</data>
+      <data key="d4">Regulatory Requirements influence how Billing Arrangements are structured and enforced, ensuring legal compliance in billing practices.</data>
+      <data key="d5">compliance, legal standards</data>
+      <data key="d6">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </edge>
+    <edge source="USAGE RATING" target="RATE PLAN">
+      <data key="d3">9.0</data>
+      <data key="d4">Usage Rating determines how charges are applied to customers based on the stipulations of the Rate Plan.</data>
+      <data key="d5">billing methodology, customer charges</data>
+      <data key="d6">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </edge>
+    <edge source="&quot;ADJUSTMENT&quot;" target="&quot;CHARGE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Adjustments are applied to Charges or Bills, affecting the overall amounts due from Subscribers."&lt;</data>
+      <data key="d5">"financial adjustment, billing integrity"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="INVOICE" target="CUSTOMER">
+      <data key="d3">10.0</data>
+      <data key="d4">Invoices are issued to Customers, detailing the charges that correspond to the services rendered against their account.</data>
+      <data key="d5">billing, financial communication</data>
+      <data key="d6">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </edge>
+    <edge source="CUSTOMER" target="REFUND">
+      <data key="d3">8.0</data>
+      <data key="d4">Refunds are issued to Customers for overcharges, providing financial rectification for billing discrepancies.</data>
+      <data key="d5">billing correction, customer service</data>
+      <data key="d6">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </edge>
+    <edge source="CUSTOMER" target="PARTNER USAGE RECORDS">
+      <data key="d3">7.0</data>
+      <data key="d4">Partner Usage Records document the usage by Customers that impacts revenue calculations for partners, aligning financial interests.</data>
+      <data key="d5">revenue sharing, partner relations</data>
+      <data key="d6">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </edge>
+    <edge source="CUSTOMER" target="CONTRACT">
+      <data key="d3">9.0</data>
+      <data key="d4">Contracts outline the terms between the provider and the Customer, underpinning the nature of their service relationship.</data>
+      <data key="d5">service agreement, legal obligation</data>
+      <data key="d6">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </edge>
+    <edge source="CUSTOMER" target="LATE PAYMENT FEE">
+      <data key="d3">7.0</data>
+      <data key="d4">Late Payment Fees are assessed to Customers who fail to pay their dues by the specified due date, impacting their account status.</data>
+      <data key="d5">account management, financial penalty</data>
+      <data key="d6">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </edge>
+    <edge source="CUSTOMER" target="QUOTA MANAGEMENT">
+      <data key="d3">7.0</data>
+      <data key="d4">Quota Management oversees the limits placed on Customers' usage of services, ensuring adherence to agreed-upon terms.</data>
+      <data key="d5">usage control, compliance</data>
+      <data key="d6">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </edge>
+    <edge source="&quot;CHARGE DISPUTE SUBMISSION&quot;" target="&quot;PRIMARY SUBSCRIBER RESPONSIBILITY&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Charge Dispute Submission needs to be initiated by the primary subscriber responsible for account management and charges."&lt;</data>
+      <data key="d5">"dispute management, subscriber responsibility"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;CHARGE DISPUTE SUBMISSION&quot;" target="&quot;DISPUTE SUBMISSION&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Dispute Submission is the formal process required for Charge Dispute Submission relating to any disputed charges."&lt;</data>
+      <data key="d5">"formal procedures, consumer rights"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;CHARGE&quot;" target="&quot;INVOICE LINE ITEM&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Each Invoice Line Item corresponds to a Charge, detailing discounts applied and any adjustments made."&lt;</data>
+      <data key="d5">"billing details, financial transparency"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="PURGE ELIGIBILITY DATES" target="DOCUMENT">
+      <data key="d3">6.0</data>
+      <data key="d4">Purge Eligibility Dates determine when specific documents, such as invoices or contracts, can be removed from the system, aiding in compliance.</data>
+      <data key="d5">document management, compliance</data>
+      <data key="d6">chunk-539dcf27f4b6ed8b376638ab267c21d7</data>
+    </edge>
+    <edge source="&quot;ACCOUNT CLOSURE REQUESTS&quot;" target="&quot;EARLY TERMINATION FEE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Early Termination Fee may apply when subscribers initiate Account Closure Requests, highlighting penalties related to early cancellation."&lt;</data>
+      <data key="d5">"cancellation penalties, subscriber decisions"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;DUNNING PROFILE&quot;" target="&quot;ACCOUNT&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"A Dunning Profile is affiliated with an Account, outlining processes for managing past due amounts and collections."&lt;</data>
+      <data key="d5">"payment management, collections"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="&quot;OUTAGE COMMUNICATIONS&quot;" target="&quot;FORCE MAJEURE EVENTS&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Outage Communications may exclude compensation when affected by Force Majeure Events that are beyond control.""</data>
+      <data key="d5">"liability, service terms"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;SUBSCRIBER DATA PRIVACY&quot;" target="&quot;PRIVACY LAWS&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Privacy Laws directly inform the practices surrounding Subscriber Data Privacy, requiring compliance in handling personal data."&lt;</data>
+      <data key="d5">"regulatory compliance, data protection"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;RESOURCE SHARING AMONG SUBSCRIBERS&quot;" target="&quot;ACCOUNT CHANGES AUTHORIZATION&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"Account Changes Authorization pertains to subscriber authority, affecting how subscribers can share resources amongst themselves."&lt;</data>
+      <data key="d5">"authority, collaborative management"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;SERVICE INSTANCE&quot;" target="&quot;SLA&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"SLA parameters are tracked at the Service Instance level, detailing service quality obligations and penalties for violations."&lt;</data>
+      <data key="d5">"service quality, performance monitoring"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="&quot;SERVICE INSTANCE&quot;" target="&quot;SUBSCRIBER&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"A Service Instance is directly associated with a Subscriber and can generate Charges billed under the Subscriber's Account."&lt;</data>
+      <data key="d5">"service provision, billing connection"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="&quot;SERVICE INSTANCE&quot;" target="&quot;NETWORK PERFORMANCE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Quality of Service metrics for Service Instances are derived from Network Performance entities."&lt;</data>
+      <data key="d5">"service quality monitoring, performance evaluation"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="&quot;ADDING ADDITIONAL SUBSCRIBERS&quot;" target="&quot;PRIMARY SUBSCRIBER RESPONSIBILITY&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Primary Subscriber Responsibility is directly related to the Adding Additional Subscribers process as both revolve around the primary subscriber's authority on account matters."&lt;</data>
+      <data key="d5">"account management, subscriber authority"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;FORCE MAJEURE&quot;" target="&quot;OUTAGE COMPENSATION&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Force Majeure provisions outline situations in which Outage Compensation will not be provided, indicating a protective measure for the service provider."&lt;</data>
+      <data key="d5">"liability protection, contractual obligations"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;NETWORK CAPACITY MONITORING&quot;" target="&quot;FORCE MAJEURE EXCLUSION&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Both events are parts of the policies that govern account management and service provisions for customers, emphasizing the management of service outages and performance."&lt;</data>
+      <data key="d5">"policy frameworks, service management"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;NETWORK CAPACITY MONITORING&quot;" target="&quot;SERVICE PLANS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Network Capacity Monitoring is necessary to ensure that Service Plans meet user demand without performance degradation.""</data>
+      <data key="d5">"network management, user demand"</data>
+      <data key="d6">chunk-7b462675e9c4054ebbdaa14f7c270492</data>
+    </edge>
+    <edge source="&quot;NETWORK SPECIFICATIONS&quot;" target="&quot;EQUIPMENT COMPATIBILITY&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Network Specifications dictate the standards required for Equipment Compatibility, ensuring that all equipment works properly with the network."&lt;</data>
+      <data key="d5">"technical requirements, compatibility"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;SUBSCRIBER MANAGEMENT&quot;" target="&quot;PRIMARY SUBSCRIBER RESPONSIBILITY&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"Subscriber Management is influenced by the Primary Subscriber Responsibility, as the primary subscriber plays a crucial role in managing the account."&lt;</data>
+      <data key="d5">"account administration, role definition"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;NON-PAYMENT&quot;" target="&quot;ACCOUNT SUSPENSION FOR NON-PAYMENT&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Non-Payment directly leads to Account Suspension for Non-Payment, indicating a clear cause-and-effect relationship."&lt;</data>
+      <data key="d5">"financial consequences, service interruption"</data>
+      <data key="d6">chunk-3412d0eb93f0429a96608f0265b8be57</data>
+    </edge>
+    <edge source="&quot;ACCOUNT&quot;" target="&quot;SUBSCRIBER&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"An Account can have multiple Subscribers, each maintaining individual Service Profiles, creating a hierarchy of billing relationships."&lt;</data>
+      <data key="d5">"billing relationship, hierarchy"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+    <edge source="&quot;SUBSCRIBER&quot;" target="&quot;SERVICE PROFILE&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Each Subscriber maintains a Service Profile that defines their unique service configurations and preferences."&lt;</data>
+      <data key="d5">"service personalization, user management"</data>
+      <data key="d6">chunk-41902b978cfac122d8dac1f1fb1e31e1</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,386 @@
+2024-11-29 11:20:11,735 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 11:20:11,735 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2024-11-29 11:20:11,735 - lightrag - INFO - Load KV full_docs with 0 data
+2024-11-29 11:20:11,735 - lightrag - INFO - Load KV text_chunks with 0 data
+2024-11-29 11:20:11,736 - lightrag - INFO - [New Docs] inserting 1 docs
+2024-11-29 11:20:13,811 - lightrag - INFO - [New Chunks] inserting 3 chunks
+2024-11-29 11:20:13,811 - lightrag - INFO - Inserting 3 vectors to chunks
+2024-11-29 11:20:14,991 - lightrag - INFO - [Entity Extraction]...
+2024-11-29 11:20:54,394 - lightrag - INFO - Inserting entities into storage...
+2024-11-29 11:20:54,407 - lightrag - INFO - Inserting relationships into storage...
+2024-11-29 11:20:54,412 - lightrag - INFO - Inserting 55 vectors to entities
+2024-11-29 11:20:56,524 - lightrag - INFO - Inserting 27 vectors to relationships
+2024-11-29 11:20:57,931 - lightrag - INFO - Writing graph with 56 nodes, 27 edges
+2024-11-29 11:20:58,594 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 11:21:06,198 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:21:06,649 - lightrag - INFO - Local query uses 49 entites, 27 relations, 3 text units
+2024-11-29 11:21:13,140 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:21:13,917 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 11:21:20,722 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:21:21,236 - lightrag - INFO - Local query uses 49 entites, 27 relations, 3 text units
+2024-11-29 11:21:22,080 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 11:34:01,457 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 11:34:01,460 - lightrag - INFO - Load KV llm_response_cache with 11 data
+2024-11-29 11:34:01,460 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 11:34:01,462 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 11:34:01,466 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 11:34:01,476 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 11:34:01,477 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 11:34:03,028 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 11:34:03,102 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:34:03,541 - lightrag - INFO - Local query uses 49 entites, 27 relations, 3 text units
+2024-11-29 11:34:11,094 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:34:11,554 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 11:34:11,641 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:34:12,162 - lightrag - INFO - Local query uses 49 entites, 27 relations, 3 text units
+2024-11-29 11:34:12,596 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 11:34:49,369 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 11:34:49,376 - lightrag - INFO - Load KV llm_response_cache with 12 data
+2024-11-29 11:34:49,377 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 11:34:49,379 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 11:34:49,392 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 11:34:49,411 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 11:34:49,411 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 11:34:49,812 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 11:34:49,898 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:34:50,310 - lightrag - INFO - Local query uses 49 entites, 27 relations, 3 text units
+2024-11-29 11:34:50,399 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:34:50,928 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 11:34:51,014 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:34:51,665 - lightrag - INFO - Local query uses 49 entites, 27 relations, 3 text units
+2024-11-29 11:34:52,295 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 11:39:06,288 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 11:39:06,296 - lightrag - INFO - Load KV llm_response_cache with 12 data
+2024-11-29 11:39:06,297 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 11:39:06,298 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 11:39:06,326 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 11:39:06,345 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 11:39:06,345 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 11:39:07,828 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 11:39:14,987 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:39:15,393 - lightrag - INFO - Local query uses 46 entites, 27 relations, 3 text units
+2024-11-29 11:39:23,102 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:39:23,583 - lightrag - INFO - Global query uses 32 entites, 25 relations, 3 text units
+2024-11-29 11:39:31,507 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:39:31,986 - lightrag - INFO - Local query uses 46 entites, 27 relations, 3 text units
+2024-11-29 11:39:32,409 - lightrag - INFO - Global query uses 32 entites, 25 relations, 3 text units
+2024-11-29 11:56:28,862 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 11:56:28,866 - lightrag - INFO - Load KV llm_response_cache with 17 data
+2024-11-29 11:56:28,867 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 11:56:28,869 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 11:56:28,891 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 11:56:28,915 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 11:56:28,916 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 11:56:30,267 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 11:56:33,970 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:56:34,507 - lightrag - INFO - Local query uses 54 entites, 27 relations, 3 text units
+2024-11-29 11:56:43,922 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:56:44,742 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 11:56:47,550 - lightrag - INFO - kw_prompt result:
+2024-11-29 11:56:48,123 - lightrag - INFO - Local query uses 54 entites, 27 relations, 3 text units
+2024-11-29 11:56:48,844 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:03:52,862 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 12:03:52,877 - lightrag - INFO - Load KV llm_response_cache with 22 data
+2024-11-29 12:03:52,878 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 12:03:52,879 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 12:03:52,900 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 12:03:52,919 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:03:52,920 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 12:03:54,813 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 12:03:58,370 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:03:58,998 - lightrag - INFO - Local query uses 47 entites, 27 relations, 3 text units
+2024-11-29 12:04:02,035 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:04:02,443 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:04:06,645 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:04:06,963 - lightrag - INFO - Local query uses 47 entites, 27 relations, 3 text units
+2024-11-29 12:04:07,646 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:06:54,012 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 12:06:54,016 - lightrag - INFO - Load KV llm_response_cache with 27 data
+2024-11-29 12:06:54,017 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 12:06:54,018 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 12:06:54,024 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 12:06:54,041 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:06:54,042 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 12:06:55,466 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 12:06:58,912 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:06:59,443 - lightrag - INFO - Local query uses 44 entites, 27 relations, 3 text units
+2024-11-29 12:07:02,653 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:07:03,116 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:07:06,838 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:07:07,236 - lightrag - INFO - Local query uses 44 entites, 27 relations, 3 text units
+2024-11-29 12:07:07,827 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:07:49,435 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:07:50,257 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 12:07:53,630 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:07:54,048 - lightrag - INFO - Local query uses 46 entites, 26 relations, 3 text units
+2024-11-29 12:07:57,978 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:07:58,626 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:08:04,400 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:08:05,120 - lightrag - INFO - Local query uses 46 entites, 26 relations, 3 text units
+2024-11-29 12:08:05,495 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:10:23,307 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:10:24,301 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 12:10:28,489 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:10:29,472 - lightrag - INFO - Local query uses 47 entites, 27 relations, 3 text units
+2024-11-29 12:10:33,264 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:10:33,578 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:10:37,048 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:10:37,782 - lightrag - INFO - Local query uses 47 entites, 27 relations, 3 text units
+2024-11-29 12:10:38,404 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:12:13,803 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 12:12:13,811 - lightrag - INFO - Load KV llm_response_cache with 42 data
+2024-11-29 12:12:13,812 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 12:12:13,814 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 12:12:13,826 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 12:12:13,837 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:12:13,837 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 12:12:45,871 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:12:47,597 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 12:12:51,254 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:12:51,719 - lightrag - INFO - Local query uses 47 entites, 27 relations, 3 text units
+2024-11-29 12:12:56,132 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:12:56,501 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:13:00,795 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:13:01,363 - lightrag - INFO - Local query uses 47 entites, 27 relations, 3 text units
+2024-11-29 12:13:01,739 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:15:02,278 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 12:15:02,284 - lightrag - INFO - Load KV llm_response_cache with 47 data
+2024-11-29 12:15:02,285 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 12:15:02,286 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 12:15:02,304 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 12:15:02,330 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:15:02,331 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 12:15:23,749 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:15:25,530 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 12:15:29,694 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:15:30,221 - lightrag - INFO - Local query uses 47 entites, 27 relations, 3 text units
+2024-11-29 12:15:34,309 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:15:34,961 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:15:38,397 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:15:38,732 - lightrag - INFO - Local query uses 47 entites, 27 relations, 3 text units
+2024-11-29 12:15:39,425 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:16:34,803 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:16:35,665 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 12:16:42,309 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:16:42,806 - lightrag - INFO - Local query uses 51 entites, 27 relations, 3 text units
+2024-11-29 12:16:48,474 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:16:48,869 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:16:54,104 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:16:54,579 - lightrag - INFO - Local query uses 51 entites, 27 relations, 3 text units
+2024-11-29 12:16:55,034 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:19:00,023 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:26:07,564 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 12:26:07,586 - lightrag - INFO - Load KV llm_response_cache with 57 data
+2024-11-29 12:26:07,587 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 12:26:07,588 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 12:26:07,599 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 12:26:07,611 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:26:07,611 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 12:26:54,516 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 12:26:54,521 - lightrag - INFO - Load KV llm_response_cache with 57 data
+2024-11-29 12:26:54,523 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 12:26:54,525 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 12:26:54,539 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 12:26:54,551 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:26:54,552 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 12:27:14,734 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:27:18,546 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:27:20,029 - lightrag - INFO - Local query uses 48 entites, 27 relations, 3 text units
+2024-11-29 12:27:20,478 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:28:10,544 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:28:12,388 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:28:12,847 - lightrag - INFO - Local query uses 48 entites, 27 relations, 3 text units
+2024-11-29 12:28:14,131 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:28:32,048 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:28:33,736 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:28:34,157 - lightrag - INFO - Local query uses 48 entites, 27 relations, 3 text units
+2024-11-29 12:28:34,548 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:29:06,978 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:29:08,863 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:29:09,384 - lightrag - INFO - Local query uses 47 entites, 27 relations, 3 text units
+2024-11-29 12:29:09,871 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:29:47,540 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:29:50,673 - lightrag - INFO - kw_prompt result:
+2024-11-29 12:29:51,233 - lightrag - INFO - Local query uses 53 entites, 27 relations, 3 text units
+2024-11-29 12:29:51,643 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 12:38:38,175 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 12:38:38,187 - lightrag - INFO - Load KV llm_response_cache with 67 data
+2024-11-29 12:38:38,189 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 12:38:38,191 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 12:38:38,217 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 12:38:38,233 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:38:38,234 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 12:43:16,217 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 12:43:16,224 - lightrag - INFO - Load KV llm_response_cache with 67 data
+2024-11-29 12:43:16,226 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 12:43:16,228 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 12:43:16,256 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 12:43:16,280 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:43:16,281 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 12:44:07,378 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 12:44:07,385 - lightrag - INFO - Load KV llm_response_cache with 67 data
+2024-11-29 12:44:07,386 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 12:44:07,388 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 12:44:07,413 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 12:44:07,427 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:44:07,427 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 12:48:16,047 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 12:48:16,055 - lightrag - INFO - Load KV llm_response_cache with 67 data
+2024-11-29 12:48:16,056 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 12:48:16,060 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 12:48:16,079 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 12:48:16,096 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:48:16,097 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 12:52:24,706 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 12:52:24,714 - lightrag - INFO - Load KV llm_response_cache with 67 data
+2024-11-29 12:52:24,718 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 12:52:24,720 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 12:52:24,728 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 12:52:24,744 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:52:24,745 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 12:53:08,067 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 12:53:10,160 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 13:00:40,334 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 13:00:40,340 - lightrag - INFO - Load KV llm_response_cache with 68 data
+2024-11-29 13:00:40,341 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 13:00:40,342 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 13:00:40,357 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 13:00:40,379 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:00:40,379 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 13:01:10,529 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:01:15,942 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:01:17,082 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:01:47,101 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:01:49,471 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:01:50,138 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:02:12,293 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:02:14,372 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:02:15,047 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:02:40,923 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:02:44,423 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:02:44,903 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:08:26,239 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 13:08:26,251 - lightrag - INFO - Load KV llm_response_cache with 76 data
+2024-11-29 13:08:26,254 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 13:08:26,258 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 13:08:26,268 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 13:08:26,289 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:08:26,290 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 13:12:29,491 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 13:12:29,496 - lightrag - INFO - Load KV llm_response_cache with 76 data
+2024-11-29 13:12:29,497 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 13:12:29,498 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 13:12:29,531 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 13:12:29,548 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:12:29,548 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 13:13:30,894 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:13:34,346 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:13:35,346 - lightrag - INFO - Local query uses 51 entites, 27 relations, 3 text units
+2024-11-29 13:13:36,018 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:16:06,782 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 13:16:06,787 - lightrag - INFO - Load KV llm_response_cache with 78 data
+2024-11-29 13:16:06,788 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 13:16:06,789 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 13:16:06,808 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 13:16:06,841 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:16:06,842 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 13:16:27,744 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:16:30,575 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:16:31,409 - lightrag - INFO - Local query uses 48 entites, 27 relations, 3 text units
+2024-11-29 13:16:32,241 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:16:44,879 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:16:46,742 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:16:47,386 - lightrag - INFO - Local query uses 41 entites, 26 relations, 3 text units
+2024-11-29 13:16:48,020 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:18:16,969 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:18:19,102 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:18:19,728 - lightrag - INFO - Local query uses 48 entites, 27 relations, 3 text units
+2024-11-29 13:18:20,261 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:20:49,302 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 13:20:49,310 - lightrag - INFO - Load KV llm_response_cache with 84 data
+2024-11-29 13:20:49,312 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 13:20:49,315 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 13:20:49,332 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 13:20:49,350 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:20:49,351 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 13:24:27,845 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 13:24:27,854 - lightrag - INFO - Load KV llm_response_cache with 84 data
+2024-11-29 13:24:27,856 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 13:24:27,860 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 13:24:27,885 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 13:24:27,900 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:24:27,901 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 13:25:28,443 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:25:31,050 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:25:31,865 - lightrag - INFO - Local query uses 49 entites, 27 relations, 3 text units
+2024-11-29 13:25:32,390 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:26:20,713 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 13:26:20,718 - lightrag - INFO - Load KV llm_response_cache with 86 data
+2024-11-29 13:26:20,720 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 13:26:20,722 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 13:26:20,733 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 13:26:20,750 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:26:20,751 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 13:26:42,873 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:26:45,394 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:26:46,240 - lightrag - INFO - Local query uses 49 entites, 27 relations, 3 text units
+2024-11-29 13:26:46,919 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:29:24,297 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 13:29:24,306 - lightrag - INFO - Load KV llm_response_cache with 88 data
+2024-11-29 13:29:24,309 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 13:29:24,312 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 13:29:24,350 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 13:29:24,365 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:29:24,366 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 13:30:16,476 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:30:19,516 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:30:20,279 - lightrag - INFO - Local query uses 51 entites, 27 relations, 3 text units
+2024-11-29 13:30:20,631 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:30:42,085 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:30:44,216 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:30:44,923 - lightrag - INFO - Local query uses 48 entites, 27 relations, 3 text units
+2024-11-29 13:30:45,357 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:31:23,566 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:31:25,964 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:31:26,444 - lightrag - INFO - Local query uses 54 entites, 27 relations, 3 text units
+2024-11-29 13:31:26,950 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:32:14,469 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:32:17,905 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:32:18,456 - lightrag - INFO - Local query uses 50 entites, 27 relations, 3 text units
+2024-11-29 13:32:18,856 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:33:00,729 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:33:02,841 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:33:03,595 - lightrag - INFO - Local query uses 46 entites, 27 relations, 3 text units
+2024-11-29 13:33:04,114 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:33:31,348 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:33:33,845 - lightrag - INFO - kw_prompt result:
+2024-11-29 13:33:34,307 - lightrag - INFO - Local query uses 48 entites, 27 relations, 3 text units
+2024-11-29 13:33:34,898 - lightrag - INFO - Global query uses 34 entites, 27 relations, 3 text units
+2024-11-29 13:35:16,382 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 13:35:16,390 - lightrag - INFO - Load KV llm_response_cache with 100 data
+2024-11-29 13:35:16,392 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 13:35:16,394 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 13:35:16,412 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 13:35:16,427 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:35:16,428 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 13:36:00,390 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 13:36:00,398 - lightrag - INFO - Load KV llm_response_cache with 100 data
+2024-11-29 13:36:00,399 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 13:36:00,400 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 13:36:00,410 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 13:36:00,434 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:36:00,435 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 13:40:39,414 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2024-11-29 13:40:39,423 - lightrag - INFO - Load KV llm_response_cache with 100 data
+2024-11-29 13:40:39,424 - lightrag - INFO - Load KV full_docs with 1 data
+2024-11-29 13:40:39,426 - lightrag - INFO - Load KV text_chunks with 3 data
+2024-11-29 13:40:39,449 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 56 nodes, 27 edges
+2024-11-29 13:40:39,472 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:40:39,474 - lightrag - WARNING - All docs are already in the storage
+2024-11-29 13:41:26,289 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:41:28,006 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 13:41:43,164 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:41:43,788 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 13:42:05,041 - lightrag - INFO - Creating a new event loop in main thread.
+2024-11-29 13:42:05,742 - lightrag - INFO - Truncate 3 to 3 chunks
+2024-11-29 13:43:02,679 - lightrag - INFO - Creating a new event loop in main thread.

@@ -1,0 +1,482 @@
+
+
+## Account and Subscriber Relationships
+
+1. An Account represents the primary billing relationship and can have multiple Subscribers, but must have at least one Subscriber designated as the Account Owner. The Account Owner has full administrative privileges including adding/removing Subscribers and modifying billing arrangements.
+
+2. Each Subscriber within an Account maintains their own Service Profile, which defines their individual service configurations, but charges are consolidated at the Account level unless explicitly configured for split billing.
+
+3. A Subscriber can belong to only one Account at a time, and any attempt to associate a Subscriber with multiple Accounts must be rejected by the system.
+
+## Charge and Bill Structure
+
+4. A Bill is composed of multiple Charge entities, where each Charge must be associated with exactly one Service Instance and one Billing Period. The Bill serves as a container for organizing related Charges.
+
+5. Each Charge entity must have a clearly defined Charge Type (One-time, Recurring, Usage-based, or Penalty) and must reference the specific Service Instance that generated it.
+
+6. Usage-based Charges must maintain an audit trail linking to the specific Rating Event Records (RERs) that generated them, allowing for dispute resolution and validation.
+
+## Billing Arrangements and Payment Terms
+
+7. A Billing Arrangement defines the billing frequency, payment terms, and invoice delivery preferences for an Account. An Account can have multiple Billing Arrangements only if split billing is enabled.
+
+8. When split billing is configured, each Billing Arrangement must specify which Subscribers and Service Types it covers, with no overlap allowed between arrangements.
+
+9. Payment Terms defined in a Billing Arrangement affect late fee calculations and dunning processes. Different Service Types within the same Account can have different Payment Terms only if they are under separate Billing Arrangements.
+
+## Discount Application Rules
+
+10. A Discount entity must be associated with either a specific Charge Type, Service Instance, or explicitly marked as Bill-level. The system must validate this association before applying the discount.
+
+11. Multiple Discounts can apply to the same Charge only if they have different Discount Types (Percentage, Fixed Amount, or Unit-based) and are explicitly marked as stackable.
+
+12. When multiple non-stackable Discounts are eligible for the same Charge, the system must apply the most beneficial Discount to the customer based on the calculated discount amount.
+
+## Tax Calculation and Application
+
+13. Tax calculations must occur after all Discounts have been applied but before any Account-level adjustments. Each Tax entity must reference the specific taxable Charges it applies to.
+
+14. Tax exemptions must be validated at both the Account and Service Instance level, with proper documentation stored as digital attachments to the Account entity.
+
+15. Different Tax rates for different Service Types within the same Bill must be calculated separately and clearly itemized.
+
+## Service Instance Management
+
+16. A Service Instance must be associated with exactly one Subscriber but can generate Charges that are billed to any Billing Arrangement within the Account.
+
+17. Service Instance status changes (Activation, Suspension, Termination) must trigger appropriate prorated Charge calculations based on the effective timestamp of the status change.
+
+18. Service Dependencies between Service Instances must be enforced - for example, a Value Added Service cannot be active if its parent Basic Service is not active.
+
+## Product Catalog and Rate Plan Rules
+
+19. Each Service Instance must reference a specific Rate Plan from the Product Catalog, and any mid-cycle Rate Plan changes must trigger prorated Charge calculations.
+
+20. Rate Plan eligibility must be validated against both Account and Subscriber attributes, including location, customer segment, and existing services.
+
+21. Product Bundle rules must be enforced at the Account level, ensuring all required Service Instances are maintained to qualify for bundle pricing.
+
+## Credit Management Rules
+
+22. Credit Limits must be maintained at both Account and Subscriber levels, with the lower limit taking precedence for authorization decisions.
+
+23. Credit consumption must be calculated in real-time for usage-based services, aggregating across all active Service Instances associated with the Credit Control entity.
+
+24. Credit threshold notifications must be triggered based on both percentage and absolute amount thresholds defined in the Credit Control Profile.
+
+## Adjustment and Dispute Handling
+
+25. Adjustments can be applied at either the Charge level or Bill level, but must maintain references to the original Charges being adjusted.
+
+26. Dispute creation must freeze the disputed amount from dunning processes while maintaining separate tracking of undisputed amounts that remain payable.
+
+27. Resolution of disputes must trigger appropriate Adjustment creation and customer notification based on the Resolution Type and Amount.
+
+## Collections and Dunning
+
+28. Dunning Profiles must be assigned at the Account level but can be overridden by specific Billing Arrangement rules.
+
+29. Collections processes must aggregate past due amounts across all Billing Arrangements within an Account before initiating collection actions.
+
+30. Service suspension during collections must follow Service Instance dependencies to ensure critical services are maintained according to regulatory requirements.
+
+## Invoice Generation Rules
+
+31. Invoice generation must respect billing cycles defined in Billing Arrangements while consolidating charges across all Service Instances covered by the arrangement.
+
+32. Each Invoice Line Item must maintain references to its originating Charge entity and reflect all applied Discounts, Taxes, and Adjustments.
+
+33. Invoice supplements for usage details must be generated based on Subscriber preferences while maintaining consistent formatting with the main invoice.
+
+## Service Quality and SLA Management
+
+34. Service Level Agreement (SLA) parameters must be tracked at the Service Instance level while aggregating violations at both Subscriber and Account levels.
+
+35. SLA violation credits must be calculated based on the specific Service Instance's Rate Plan and applied as Adjustments to the associated Charges.
+
+36. Quality of Service metrics must be maintained per Service Instance with clear correlation to Network Performance entities.
+
+## Usage Rating and Charging
+
+37. Usage Rating must apply the most advantageous rate to the customer when multiple rate options exist within the assigned Rate Plan.
+
+38. Rating breakpoints for tiered pricing must be calculated across all eligible Service Instances within a Billing Arrangement when specified by the Rate Plan.
+
+39. Zero-rated usage must maintain full rating calculations with explicit zero-rate application for audit purposes.
+
+## Order Management and Provisioning
+
+40. Service Order entities must maintain relationships to all affected Service Instances, Subscribers, and Account entities throughout the fulfillment process.
+
+41. Changes to Service Instance parameters through Orders must trigger validation of dependent services and associated Rate Plans.
+
+42. Order completion must trigger appropriate Charge creation based on both one-time and recurring charge components defined in the Product Catalog.
+
+## Resource Management
+
+43. Resource Inventory entities (such as phone numbers, IP addresses) must maintain clear assignments to Service Instances with full historical tracking.
+
+44. Resource recycling must respect quarantine periods based on Resource Type and previous Service Instance associations.
+
+45. Resource reservations must be tracked separately from assignments and expire automatically if not converted to assignments within the defined reservation period.
+
+## Partner Settlement
+
+46. Partner Usage Records must maintain clear correlation to customer Usage Records and associated Charges for revenue sharing calculations.
+
+47. Settlement Period definitions must align with partner agreements while maintaining independence from customer Billing Cycles.
+
+48. Revenue sharing calculations must consider Discounts and Adjustments applied to the original customer Charges according to partner agreement terms.
+
+## Document Management
+
+49. All customer-facing documents (Invoices, Contracts, Welcome Letters) must be associated with the Account entity while maintaining Subscriber-level classifications when applicable.
+
+50. Document retention periods must be enforced based on Document Type and regulatory requirements, with explicit tracking of purge eligibility dates.
+
+##############################################################
+
+**Billing Rules:**
+
+1. **Refunds for Overcharges**
+
+   **Description:** If a customer is overcharged due to a billing error, issue a refund for the overcharged amount within five business days.
+
+   **Formula:**
+
+   \[
+   \text{Refund Amount} = \text{Overcharged Amount}
+   \]
+
+   **Example:**
+
+   If a customer was overcharged by \$50, they should receive a refund of \$50 within five business days.
+
+2. **Proration on Service Cancellation**
+
+   **Description:** When a customer cancels service before the end of the billing cycle, adjust charges proportionally for the unused period.
+
+   **Formula:**
+
+   \[
+   \text{Prorated Charge} = \left( \frac{\text{Monthly Charge}}{\text{Total Days in Billing Cycle}} \right) \times \text{Days of Service Used}
+   \]
+
+   \[
+   \text{Prorated Refund} = \text{Monthly Charge} - \text{Prorated Charge}
+   \]
+
+   **Example:**
+
+   For a \$300/month service canceled after 10 days in a 30-day billing cycle:
+
+   \[
+   \text{Prorated Charge} = \left( \frac{\$300}{30} \right) \times 10 = \$100
+   \]
+
+   \[
+   \text{Prorated Refund} = \$300 - \$100 = \$200
+   \]
+
+   The customer is refunded \$200 for the unused 20 days.
+
+3. **Discount Application Timing**
+
+   **Description:** Discounts are applied at the start of the billing cycle and cannot be retroactively applied to previous cycles.
+
+4. **Multiple Discounts Handling**
+
+   **Description:** If eligible for multiple discounts, a customer receives only the highest-value discount unless specified by a bundled offer.
+
+   **Example:**
+
+   - Eligible Discounts: 10% off and \$30 off on a \$200 service.
+   - 10% off = \$20 discount.
+   - \$30 off = \$30 discount.
+
+   The customer receives the higher discount of \$30 off.
+
+5. **Refund Method Consistency**
+
+   **Description:** Issue refunds using the same payment method the customer used for the original transaction.
+
+6. **Late Payment Fees**
+
+   **Description:** Apply late payment fees if payment is not received within ten days after the due date.
+
+   **Formula:**
+
+   \[
+   \text{Late Payment Fee} = \text{Outstanding Balance} \times \text{Late Fee Rate}
+   \]
+
+   **Example:**
+
+   If the outstanding balance is \$200 and the late fee rate is 5%:
+
+   \[
+   \text{Late Payment Fee} = \$200 \times 0.05 = \$10
+   \]
+
+7. **Billing Disputes Notification**
+
+   **Description:** Customers must notify customer care of billing disputes within 30 days of the bill date to be eligible for adjustments.
+
+8. **Monthly Billing Statements**
+
+   **Description:** Generate billing statements monthly, reflecting all charges, adjustments, and payments made during the cycle.
+
+9. **Proration Exclusions**
+
+   **Description:** Proration does not apply to fixed charges like activation fees—only to recurring service charges.
+
+10. **Correction of Discount Errors**
+
+    **Description:** If a discount is incorrectly applied, correct it starting from the next billing cycle.
+
+**Pricing and Offers Rules:**
+
+11. **Introductory Offers for New Customers**
+
+    **Description:** New customers are eligible for a 10% discount on their first three billing cycles.
+
+    **Formula:**
+
+    \[
+    \text{Discounted Price} = \text{Original Price} \times (1 - \text{Discount Rate})
+    \]
+
+    **Example:**
+
+    For a \$100/month plan:
+
+    \[
+    \text{Discounted Price} = \$100 \times (1 - 0.10) = \$90
+    \]
+
+    The customer pays \$90 per month for the first three months.
+
+12. **Upgrade Flexibility for Existing Customers**
+
+    **Description:** Existing customers can upgrade their service plan at any time without additional upgrade fees.
+
+13. **Downgrade Fees**
+
+    **Description:** A \$50 downgrade fee applies unless the customer has been on the current plan for at least six months.
+
+14. **Bundle Activation Requirement**
+
+    **Description:** Bundled services must be activated together to qualify for bundle pricing discounts.
+
+15. **Promotional Period Validity**
+
+    **Description:** Promotional offers are valid only within the promotional period and cannot be extended.
+
+16. **Combining Promotional Offers**
+
+    **Description:** Customers cannot combine multiple promotional offers unless explicitly allowed in the terms.
+
+17. **Regulatory Pricing Adjustments**
+
+    **Description:** Communicate pricing adjustments due to regulatory changes at least 30 days in advance.
+
+18. **Early Termination Fees**
+
+    **Description:** Apply early termination fees if a customer cancels a contract before the agreed term ends.
+
+    **Formula:**
+
+    \[
+    \text{Early Termination Fee} = \text{Remaining Months} \times \text{Monthly Charge} \times \text{Termination Fee Rate}
+    \]
+
+    **Example:**
+
+    If a customer cancels with 5 months left on a \$80/month contract with a termination fee rate of 50%:
+
+    \[
+    \text{Early Termination Fee} = 5 \times \$80 \times 0.50 = \$200
+    \]
+
+19. **Referral Credits**
+
+    **Description:** Existing customers referring a new customer receive a one-time \$50 credit upon the new customer's activation.
+
+20. **Device Upgrade Eligibility**
+
+    **Description:** Device upgrades are subject to account standing and payment history eligibility.
+
+**Operations Rules:**
+
+21. **Installation Scheduling**
+
+    **Description:** Schedule installation appointments within five business days of the service request.
+
+22. **Customer Presence During Installation**
+
+    **Description:** The customer must be present during installation to provide access and approval.
+
+23. **Service Availability Dependence**
+
+    **Description:** Service availability depends on network coverage in the customer's area.
+
+24. **Missed Appointment Credit**
+
+    **Description:** If a technician misses a scheduled installation, the customer is entitled to a \$20 credit.
+
+25. **Warranty Repairs**
+
+    **Description:** Provide service repairs at no extra cost if due to equipment failure under warranty.
+
+26. **Customer Equipment Responsibility**
+
+    **Description:** Customers are responsible for securing their equipment from damage or theft.
+
+27. **Equipment Return Policy**
+
+    **Description:** Customers must return company-provided equipment upon cancellation to avoid fees.
+
+    **Formula:**
+
+    \[
+    \text{Non-Return Fee} = \text{Equipment Replacement Cost}
+    \]
+
+    **Example:**
+
+    If the equipment replacement cost is \$150, and the customer fails to return it, they are charged \$150.
+
+28. **Service Upgrade Scheduling**
+
+    **Description:** Schedule service upgrades requiring equipment changes within three business days.
+
+29. **Maintenance Notifications**
+
+    **Description:** Notify customers of service unavailability due to maintenance at least 48 hours in advance.
+
+30. **Emergency Maintenance**
+
+    **Description:** May perform emergency maintenance without prior notice to ensure network integrity.
+
+**Network and Outages Rules:**
+
+31. **Outage Service Credit**
+
+    **Description:** Provide a service credit for outages exceeding four hours to affected customers.
+
+    **Formula:**
+
+    \[
+    \text{Service Credit} = \left( \frac{\text{Monthly Charge}}{\text{Total Hours in Billing Cycle}} \right) \times \text{Outage Hours Exceeding Four Hours}
+    \]
+
+    **Example:**
+
+    For a \$120/month service with a 6-hour outage in a 720-hour month:
+
+    \[
+    \text{Outage Hours Exceeding Four Hours} = 6 - 4 = 2 \text{ hours}
+    \]
+
+    \[
+    \text{Service Credit} = \left( \frac{\$120}{720} \right) \times 2 \approx \$0.33
+    \]
+
+    The customer receives a credit of approximately \$0.33.
+
+32. **Outage Communications**
+
+    **Description:** Communicate network outages to customers via email and SMS alerts.
+
+33. **Reporting Service Outages**
+
+    **Description:** Customers should promptly report service outages to assist in resolution.
+
+34. **Planned Upgrades Notification**
+
+    **Description:** Notify customers of planned network upgrades at least seven days in advance.
+
+35. **External Factors on Performance**
+
+    **Description:** Network performance may be affected by weather and third-party disruptions.
+
+36. **Frequent Outage Review**
+
+    **Description:** Customers experiencing frequent outages may request a service review.
+
+37. **Business SLAs**
+
+    **Description:** Apply Service Level Agreements to business customers as specified in their contracts.
+
+38. **Force Majeure Exclusion**
+
+    **Description:** Do not provide outage compensation in cases of force majeure events.
+
+39. **Network Capacity Monitoring**
+
+    **Description:** Continuously monitor network capacity to ensure optimal service.
+
+40. **Equipment Compatibility**
+
+    **Description:** Customers must use equipment compatible with network specifications.
+
+**Account and Subscribers Rules:**
+
+41. **Primary Subscriber Responsibility**
+
+    **Description:** Each account must have a primary subscriber responsible for charges and management.
+
+42. **Adding Additional Subscribers**
+
+    **Description:** The primary subscriber must authorize any additional subscribers on the account.
+
+43. **Account Changes Authorization**
+
+    **Description:** Only the primary subscriber can make changes like updating contact information.
+
+44. **Resource Sharing Among Subscribers**
+
+    **Description:** Subscribers on the same account share plan resources unless specified otherwise.
+
+45. **Account Suspension for Non-Payment**
+
+    **Description:** May suspend delinquent accounts after 30 days of non-payment.
+
+46. **Reactivation Requirements**
+
+    **Description:** Reactivation requires payment of outstanding balances and may include a reactivation fee.
+
+    **Formula:**
+
+    \[
+    \text{Total Reactivation Cost} = \text{Outstanding Balance} + \text{Reactivation Fee}
+    \]
+
+    **Example:**
+
+    If the outstanding balance is \$100 and the reactivation fee is \$25:
+
+    \[
+    \text{Total Reactivation Cost} = \$100 + \$25 = \$125
+    \]
+
+47. **Account Statement Delivery**
+
+    **Description:** Send account statements to the primary email address unless otherwise requested.
+
+48. **Account Closure Requests**
+
+    **Description:** Customers can request account closure anytime, subject to applicable fees.
+
+    **Example:**
+
+    If there is an early termination fee of \$150 applicable upon account closure, the customer must pay this fee to close the account.
+
+49. **Subscriber Data Privacy**
+
+    **Description:** Handle personal data in compliance with privacy laws and company policies.
+
+50. **Charge Dispute Submission**
+
+    **Description:** Customers must submit disputes regarding charges in writing within 60 days.
+

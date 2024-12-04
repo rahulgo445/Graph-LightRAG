@@ -1,0 +1,454 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d6" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d5" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d4" for="edge" attr.name="description" attr.type="string" />
+  <key id="d3" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d2" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="description" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_type" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="&quot;ACCOUNT CLOSURE FEE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Account Closure Fee refers to the termination fee of $150 that customers must pay to close their account."</data>
+      <data key="d2">chunk-31ad040681f67418d28705829572892e</data>
+    </node>
+    <node id="PRORATION ON SERVICE CANCELLATION">
+      <data key="d0">EVENT</data>
+      <data key="d1">Proration on Service Cancellation relates to the adjustment of charges for customers who cancel services, ensuring they are only billed for the service period used.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="REFERRAL CREDITS">
+      <data key="d0">EVENT</data>
+      <data key="d1">Referral Credits are monetary rewards provided to existing customers for referring new clients, enhancing customer engagement.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="CUSTOMER CARE">
+      <data key="d0">ORGANIZATION</data>
+      <data key="d1">Customer Care is a service organization responsible for managing customer inquiries and disputes regarding billing issues, ensuring customer satisfaction through effective communication and support.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="&quot;PLANNED UPGRADES NOTIFICATION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Planned Upgrades Notification requires informing customers about forthcoming network upgrades at least a week prior to the changes."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="EARLY TERMINATION FEES">
+      <data key="d0">EVENT</data>
+      <data key="d1">Early Termination Fees are costs incurred if a customer cancels their contract before the agreed duration, ensuring the company recoups losses.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="&quot;ADDING ADDITIONAL SUBSCRIBERS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Adding Additional Subscribers stipulates that the primary subscriber must provide authorization for any new account holders."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="REFUNDS FOR OVERCHARGES">
+      <data key="d0">EVENT</data>
+      <data key="d1">Refunds for Overcharges detail the company’s process for refunding customers who have been overcharged, emphasizing timely issuance of refunds within five business days.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="&quot;REACTIVATION REQUIREMENTS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Reactivation Requirements entail settling outstanding balances and potentially paying a fee to restore services after suspension."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;DEVICE UPGRADE ELIGIBILITY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Device Upgrade Eligibility refers to the criteria that customers must meet regarding their payment history and account standing to qualify for device upgrades."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="INTRODUCTORY OFFERS FOR NEW CUSTOMERS">
+      <data key="d0">EVENT</data>
+      <data key="d1">Introductory Offers for New Customers provide new clients with a discount on their service fees for the initial months, encouraging them to sign up.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="&quot;RESOURCE SHARING AMONG SUBSCRIBERS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Resource Sharing Among Subscribers implies that individuals on a shared account can access common plan resources unless stated otherwise."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;CHARGE DISPUTE SUBMISSION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Charge Dispute Submission requires customers to submit disputes regarding charges in writing within 60 days, establishing a formal process for addressing billing issues."&lt;SEP&gt;"Charge Dispute Submission sets forth the requirement for customers to formally contest charges within a 60-day timeframe."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69&lt;SEP&gt;chunk-31ad040681f67418d28705829572892e</data>
+    </node>
+    <node id="&quot;EMERGENCY MAINTENANCE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Emergency Maintenance can be performed without prior notice to maintain network integrity in urgent situations."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="MONTHLY CHARGE">
+      <data key="d0">CONCEPT</data>
+      <data key="d1">Monthly Charge is the regular fee a customer is required to pay for the service, which serves as a basis for calculation in various billing adjustments such as proration.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="BUNDLE PRICING DISCOUNTS">
+      <data key="d0">EVENT</data>
+      <data key="d1">Bundle Pricing Discounts are price reductions applied when services are purchased together, helping customers save costs on bundled services.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="&quot;MAINTENANCE NOTIFICATIONS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Maintenance Notifications require the company to inform customers at least 48 hours in advance of service unavailability due to maintenance activities."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="DOWNGRADE FEES">
+      <data key="d0">EVENT</data>
+      <data key="d1">Downgrade Fees are charges applied to customers who choose to lower their service plans unless they have maintained their current plan for a specified time.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="&quot;REPORTING SERVICE OUTAGES&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Reporting Service Outages is a process by which customers communicate service interruptions to assist in resolving issues."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;ACCOUNT SUSPENSION FOR NON-PAYMENT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Account Suspension for Non-Payment can occur when an account is delinquent for over 30 days without payment."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;WARRANTY REPAIRS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Warranty Repairs cover service repairs at no cost to customers if the repair is due to equipment failure covered by a warranty."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;CUSTOMER EQUIPMENT RESPONSIBILITY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Customer Equipment Responsibility places the onus on customers to safeguard their equipment from theft and damage."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;NETWORK CAPACITY MONITORING&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Network Capacity Monitoring ensures the ongoing assessment of network capabilities to maintain optimal service for customers."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;CUSTOMER&quot;">
+      <data key="d0">"PERSON"</data>
+      <data key="d1">"Customer refers to individuals or entities who have accounts and are subject to terms such as account closures and privacy policies."</data>
+      <data key="d2">chunk-31ad040681f67418d28705829572892e</data>
+    </node>
+    <node id="&quot;MISSED APPOINTMENT CREDIT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Missed Appointment Credit is a financial credit awarded to customers when a technician fails to appear for a scheduled installation."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="DEVICE UPGRADE ELIGIBILITY">
+      <data key="d0">EVENT</data>
+      <data key="d1">Device Upgrade Eligibility criteria define the conditions under which customers may qualify for upgrading their devices based on account status.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="&quot;FORCE MAJEURE EXCLUSION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Force Majeure Exclusion clarifies that the company does not provide compensation for outages caused by uncontrollable events."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;SERVICE AVAILABILITY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Service Availability indicates that the provision of services is contingent upon network coverage in the area where the customer resides."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;SUBSCRIBER DATA PRIVACY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Subscriber Data Privacy involves handling personal data according to privacy laws and company policies, ensuring customer data protection."&lt;SEP&gt;"Subscriber Data Privacy signifies the company's commitment to managing personal information according to privacy laws and its own policies."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69&lt;SEP&gt;chunk-31ad040681f67418d28705829572892e</data>
+    </node>
+    <node id="&quot;ACCOUNT CHANGES AUTHORIZATION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Account Changes Authorization allows only the primary subscriber to manage specific account modifications, such as contact updates."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;CUSTOMER PRESENCE DURING INSTALLATION&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Customer Presence During Installation necessitates that customers are present to grant access and approve the installation of services."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="TOTAL DAYS IN BILLING CYCLE">
+      <data key="d0">CONCEPT</data>
+      <data key="d1">Total Days in Billing Cycle represents the complete number of days within a billing period, used in proration calculations for service cancellations.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="&quot;ACCOUNT STATEMENT DELIVERY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Account Statement Delivery specifies that account statements must be sent to the primary subscriber's email unless a different preference is stated."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;COMPANY POLICIES&quot;">
+      <data key="d0">"ORGANIZATION"</data>
+      <data key="d1">"Company Policies represent the set of guidelines established by the organization to govern customer interactions, privacy handling, and billing processes."</data>
+      <data key="d2">chunk-31ad040681f67418d28705829572892e</data>
+    </node>
+    <node id="&quot;CHARGE DISPUTE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Charge Dispute refers to the formal process initiated by customers to contest charges they believe are incorrect or unauthorized on their accounts."</data>
+      <data key="d2">chunk-31ad040681f67418d28705829572892e</data>
+    </node>
+    <node id="&quot;SERVICE UPGRADE SCHEDULING&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Service Upgrade Scheduling outlines the timeline for scheduling upgrades that require changes to the customer's equipment within three business days."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="DAYS OF SERVICE USED">
+      <data key="d0">CONCEPT</data>
+      <data key="d1">Days of Service Used is the number of days a customer has utilized the service within the billing cycle, important for accurate proration calculations.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="&quot;ACCOUNT CLOSURE REQUESTS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Account Closure Requests enable customers to terminate their accounts anytime, though they may incur associated fees."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;BUSINESS SLAS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Business SLAs refer to Service Level Agreements specifically tailored for business customers, detailing the service commitments provided."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;PRIVACY LAWS&quot;">
+      <data key="d0">"GEO"</data>
+      <data key="d1">"Privacy Laws are legal regulations that govern the handling of personal data, ensuring that organizations comply with various standards to protect customer information."</data>
+      <data key="d2">chunk-31ad040681f67418d28705829572892e</data>
+    </node>
+    <node id="&quot;EQUIPMENT RETURN POLICY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Equipment Return Policy necessitates that customers return company-owned equipment to avoid incurring replacement fees upon cancellation of service."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="LATE PAYMENT FEES">
+      <data key="d0">EVENT</data>
+      <data key="d1">Late Payment Fees are penalties applied to customers who fail to pay their outstanding balance on time, calculated based on the outstanding amount.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="OUTSTANDING BALANCE">
+      <data key="d0">CONCEPT</data>
+      <data key="d1">Outstanding Balance is the remaining amount that a customer owes, which can lead to the imposition of late payment fees if not settled on time.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="&quot;EQUIPMENT COMPATIBILITY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Equipment Compatibility requires that customers utilize devices that meet the network's specifications for service."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;FREQUENT OUTAGE REVIEW&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Frequent Outage Review allows customers experiencing repeated outages to request a comprehensive review of their service."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;OUTAGE SERVICE CREDIT&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Outage Service Credit is a compensation provided to customers for outages that last longer than four hours, based on the monthly charge rate."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;INSTALLATION SCHEDULING&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Installation Scheduling involves the process of organizing installation appointments to be conducted within five business days after a service request."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;EARLY TERMINATION FEE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"The Early Termination Fee is a financial charge levied on customers who terminate their service before the agreed contract period, calculated based on a percentage of the monthly rate."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;PRIMARY SUBSCRIBER RESPONSIBILITY&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Primary Subscriber Responsibility establishes that a designated primary subscriber on an account is accountable for all charges and management tasks."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="&quot;OUTAGE COMMUNICATIONS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Outage Communications involve notifying customers of service outages through email and SMS alerts."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="TERMINATION FEE RATE">
+      <data key="d0">CONCEPT</data>
+      <data key="d1">Termination Fee Rate is the percentage applied to remaining months' charges to determine the early termination fee a customer must pay.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="&quot;REFERRAL CREDITS&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"Referral Credits are incentives provided to existing customers who refer new customers, rewarding them upon the new customer’s activation."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="LATE FEE RATE">
+      <data key="d0">CONCEPT</data>
+      <data key="d1">Late Fee Rate is the percentage applied to the outstanding balance to calculate the late payment fee incurred by a customer.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="&quot;EXTERNAL FACTORS ON PERFORMANCE&quot;">
+      <data key="d0">"EVENT"</data>
+      <data key="d1">"External Factors on Performance acknowledge that network performance can be impacted by environmental conditions and third-party disruptions."</data>
+      <data key="d2">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </node>
+    <node id="REMAINING MONTHS">
+      <data key="d0">CONCEPT</data>
+      <data key="d1">Remaining Months refers to the number of months left in a service agreement when evaluating early termination fees.</data>
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </node>
+    <node id="OVERCHARGED AMOUNT">
+      <data key="d2">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+      <data key="d1">Refunds for Overcharges are issued when a customer is identified to have an Overcharged Amount due to billing mistakes.</data>
+      <data key="d0">"UNKNOWN"</data>
+    </node>
+    <edge source="&quot;ACCOUNT CLOSURE FEE&quot;" target="&quot;SUBSCRIBER DATA PRIVACY&quot;">
+      <data key="d3">6.0</data>
+      <data key="d4">"The Account Closure Fee is related to the overall process of handling personal data, as customers need to be aware of the fees when closing accounts linked to their personal information."</data>
+      <data key="d5">"financial obligation, customer awareness"</data>
+      <data key="d6">chunk-31ad040681f67418d28705829572892e</data>
+    </edge>
+    <edge source="PRORATION ON SERVICE CANCELLATION" target="CUSTOMER CARE">
+      <data key="d3">8.0</data>
+      <data key="d4">Customer Care implements the policy related to proration upon cancellation of services, ensuring customers are fairly charged for their usage.</data>
+      <data key="d5">customer service, billing adjustments</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="PRORATION ON SERVICE CANCELLATION" target="DAYS OF SERVICE USED">
+      <data key="d3">9.0</data>
+      <data key="d4">Proration on Service Cancellation depends on Days of Service Used to arrive at the prorated charge for billing adjustments.</data>
+      <data key="d5">billing adjustments, service usage</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="PRORATION ON SERVICE CANCELLATION" target="MONTHLY CHARGE">
+      <data key="d3">8.0</data>
+      <data key="d4">Proration on Service Cancellation is calculated based on the Monthly Charge to determine the correct billing for service usage.</data>
+      <data key="d5">billing adjustments, usage calculation</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="PRORATION ON SERVICE CANCELLATION" target="TOTAL DAYS IN BILLING CYCLE">
+      <data key="d3">8.0</data>
+      <data key="d4">Proration on Service Cancellation utilizes Total Days in Billing Cycle to compute the daily charge of the service for accurate adjustment.</data>
+      <data key="d5">billing calculations, cycle duration</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="REFERRAL CREDITS" target="CUSTOMER CARE">
+      <data key="d3">8.0</data>
+      <data key="d4">Customer Care manages the process and communication regarding Referral Credits, enhancing customer engagement through incentives.</data>
+      <data key="d5">customer engagement, incentive management</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="CUSTOMER CARE" target="BUNDLE PRICING DISCOUNTS">
+      <data key="d3">8.0</data>
+      <data key="d4">Customer Care informs customers about Bundle Pricing Discounts available to encourage uptake of multiple services together.</data>
+      <data key="d5">service promotion, customer engagement</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="CUSTOMER CARE" target="INTRODUCTORY OFFERS FOR NEW CUSTOMERS">
+      <data key="d3">9.0</data>
+      <data key="d4">Customer Care informs new clients about introductory offers, enhancing customer acquisition.</data>
+      <data key="d5">customer acquisition, promotional offers</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="CUSTOMER CARE" target="REFUNDS FOR OVERCHARGES">
+      <data key="d3">8.0</data>
+      <data key="d4">Customer Care oversees the process of managing refunds for overcharges, directly handling customer disputes related to excess billing.</data>
+      <data key="d5">customer service, refund management</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="CUSTOMER CARE" target="LATE PAYMENT FEES">
+      <data key="d3">7.0</data>
+      <data key="d4">Customer Care is involved in managing communications regarding late payment fees, ensuring customers are aware of their obligations.</data>
+      <data key="d5">customer service, payment management</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="CUSTOMER CARE" target="DOWNGRADE FEES">
+      <data key="d3">7.0</data>
+      <data key="d4">Customer Care aids customers in understanding downgrade fees and applies these charges according to established rules.</data>
+      <data key="d5">customer service, fee management</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="CUSTOMER CARE" target="EARLY TERMINATION FEES">
+      <data key="d3">8.0</data>
+      <data key="d4">Customer Care addresses inquiries from customers regarding early termination fees, helping mitigate misunderstandings about contractual obligations.</data>
+      <data key="d5">customer service, contract management</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="EARLY TERMINATION FEES" target="TERMINATION FEE RATE">
+      <data key="d3">9.0</data>
+      <data key="d4">Early Termination Fees utilize the Termination Fee Rate to quantify the fee based on Remaining Months left in a contract.</data>
+      <data key="d5">contract penalties, fee calculation</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="EARLY TERMINATION FEES" target="REMAINING MONTHS">
+      <data key="d3">10.0</data>
+      <data key="d4">Early Termination Fees are calculated based on Remaining Months in the contract to determine the financial penalty for canceling early.</data>
+      <data key="d5">contract adherence, financial penalties</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="&quot;ADDING ADDITIONAL SUBSCRIBERS&quot;" target="&quot;PRIMARY SUBSCRIBER RESPONSIBILITY&quot;">
+      <data key="d3">16.0</data>
+      <data key="d4">"These events are related as the primary subscriber's responsibility includes managing any additions to the account."&lt;</data>
+      <data key="d5">"account management, responsibility"</data>
+      <data key="d6">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </edge>
+    <edge source="REFUNDS FOR OVERCHARGES" target="OVERCHARGED AMOUNT">
+      <data key="d3">9.0</data>
+      <data key="d4">Refunds for Overcharges are issued when a customer is identified to have an Overcharged Amount due to billing mistakes.</data>
+      <data key="d5">refund process, billing accuracy</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="&quot;DEVICE UPGRADE ELIGIBILITY&quot;" target="&quot;EARLY TERMINATION FEE&quot;">
+      <data key="d3">12.0</data>
+      <data key="d4">"Both events are terms associated with customer agreements and fees, governing conditions under which customers may be charged."&lt;</data>
+      <data key="d5">"contractual terms, financial implications"</data>
+      <data key="d6">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </edge>
+    <edge source="&quot;CHARGE DISPUTE SUBMISSION&quot;" target="&quot;SUBSCRIBER DATA PRIVACY&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"The Subscriber Data Privacy policy intersects with Charge Dispute Submission as both involve customer rights and proper handling of disputes related to personal data and billing."</data>
+      <data key="d5">"customer rights, data handling"</data>
+      <data key="d6">chunk-31ad040681f67418d28705829572892e</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;COMPANY POLICIES&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Customers must adhere to Company Policies regarding account management and dispute submissions, influencing their interactions with the organization."</data>
+      <data key="d5">"customer compliance, organizational guidelines"</data>
+      <data key="d6">chunk-31ad040681f67418d28705829572892e</data>
+    </edge>
+    <edge source="&quot;CUSTOMER&quot;" target="&quot;CHARGE DISPUTE&quot;">
+      <data key="d3">9.0</data>
+      <data key="d4">"Customers engage in Charge Dispute to formally contest any disputed charges on their accounts, linking them directly to billing procedures."</data>
+      <data key="d5">"dispute process, customer engagement"</data>
+      <data key="d6">chunk-31ad040681f67418d28705829572892e</data>
+    </edge>
+    <edge source="&quot;MISSED APPOINTMENT CREDIT&quot;" target="&quot;OUTAGE SERVICE CREDIT&quot;">
+      <data key="d3">14.0</data>
+      <data key="d4">"Both events involve financial compensations offered to customers under specific circumstances related to service disruptions."&lt;</data>
+      <data key="d5">"customer compensation, service quality"</data>
+      <data key="d6">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </edge>
+    <edge source="&quot;SERVICE AVAILABILITY&quot;" target="&quot;OUTAGE COMMUNICATIONS&quot;">
+      <data key="d3">14.0</data>
+      <data key="d4">"Service Availability impacts the need for Outage Communications, as customers must be informed about network coverage-related issues."&lt;</data>
+      <data key="d5">"network performance, customer notifications"</data>
+      <data key="d6">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </edge>
+    <edge source="&quot;SUBSCRIBER DATA PRIVACY&quot;" target="&quot;CHARGE DISPUTE&quot;">
+      <data key="d3">7.0</data>
+      <data key="d4">"Subscriber Data Privacy procedures are critical when addressing Charge Disputes, as they ensure that customers' personal information is protected during disputes."</data>
+      <data key="d5">"data protection, dispute handling"</data>
+      <data key="d6">chunk-31ad040681f67418d28705829572892e</data>
+    </edge>
+    <edge source="&quot;CUSTOMER PRESENCE DURING INSTALLATION&quot;" target="&quot;INSTALLATION SCHEDULING&quot;">
+      <data key="d3">16.0</data>
+      <data key="d4">"These two events are interconnected as customer presence is necessary for successful installation appointments."&lt;</data>
+      <data key="d5">"installation process, customer engagement"</data>
+      <data key="d6">chunk-b1e8980d1b8df3c216c8ef4456804f69</data>
+    </edge>
+    <edge source="&quot;COMPANY POLICIES&quot;" target="&quot;PRIVACY LAWS&quot;">
+      <data key="d3">8.0</data>
+      <data key="d4">"Company Policies must align with Privacy Laws to ensure that customer data is handled properly and lawfully, indicating a relationship between organizational guidelines and legal standards."</data>
+      <data key="d5">"legal compliance, data protection"</data>
+      <data key="d6">chunk-31ad040681f67418d28705829572892e</data>
+    </edge>
+    <edge source="LATE PAYMENT FEES" target="OUTSTANDING BALANCE">
+      <data key="d3">9.0</data>
+      <data key="d4">Late Payment Fees are calculated based on the Outstanding Balance, incentivizing timely payments from customers.</data>
+      <data key="d5">payment compliance, fee structuring</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+    <edge source="LATE PAYMENT FEES" target="LATE FEE RATE">
+      <data key="d3">9.0</data>
+      <data key="d4">Late Payment Fees are determined by applying the Late Fee Rate to the Outstanding Balance when payment deadlines are missed.</data>
+      <data key="d5">fee calculation, payment terms</data>
+      <data key="d6">chunk-7c9c2ab15d45d22f03068caf998793a9</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<payment-history>
+  <customer>
+    <id>78901</id>
+    <name>Sarah Wilson</name>
+    <account-start-date>2023-06-01</account-start-date>
+    <payment-reliability-score>85</payment-reliability-score>
+    <!-- Score decreased from 98 due to recent late payments -->
+  </customer>
+  
+  <payments>
+    <!-- Current Period -->
+    <payment>
+      <billing-month>February 2024</billing-month>
+      <amount-due>285.97</amount-due>
+      <due-date>2024-02-15</due-date>
+      <status>Pending</status>
+      <includes-late-fee>true</includes-late-fee>
+    </payment>
+    
+    <!-- Previous Month - Late -->
+    <payment>
+      <billing-month>January 2024</billing-month>
+      <amount-due>260.97</amount-due>
+      <due-date>2024-01-15</due-date>
+      <status>Unpaid</status>
+      <late-fee-applied>25.00</late-fee-applied>
+      <reminder-notices>
+        <notice>
+          <date>2024-01-20</date>
+          <type>First Notice</type>
+        </notice>
+        <notice>
+          <date>2024-02-01</date>
+          <type>Second Notice</type>
+        </notice>
+      </reminder-notices>
+    </payment>
+    
+    <!-- December - Late but Paid -->
+    <payment>
+      <billing-month>December 2023</billing-month>
+      <amount-due>235.97</amount-due>
+      <due-date>2023-12-15</due-date>
+      <payment-received-date>2023-12-28</payment-received-date>
+      <amount-paid>260.97</amount-paid>
+      <late-fee-applied>25.00</late-fee-applied>
+      <status>Paid Late</status>
+    </payment>
+    
+    <!-- Previous On-Time Payments -->
+    <payment>
+      <billing-month>November 2023</billing-month>
+      <amount-due>235.97</amount-due>
+      <due-date>2023-11-15</due-date>
+      <payment-received-date>2023-11-14</payment-received-date>
+      <amount-paid>235.97</amount-paid>
+      <status>Paid On Time</status>
+      <payment-method>AutoPay</payment-method>
+    </payment>
+    
+    <payment>
+      <billing-month>October 2023</billing-month>
+      <amount-due>235.97</amount-due>
+      <due-date>2023-10-15</due-date>
+      <payment-received-date>2023-10-13</payment-received-date>
+      <amount-paid>235.97</amount-paid>
+      <status>Paid On Time</status>
+      <payment-method>AutoPay</payment-method>
+    </payment>
+    
+    <payment>
+      <billing-month>September 2023</billing-month>
+      <amount-due>235.97</amount-due>
+      <due-date>2023-09-15</due-date>
+      <payment-received-date>2023-09-15</payment-received-date>
+      <amount-paid>235.97</amount-paid>
+      <status>Paid On Time</status>
+      <payment-method>AutoPay</payment-method>
+    </payment>
+    
+    <payment>
+      <billing-month>August 2023</billing-month>
+      <amount-due>235.97</amount-due>
+      <due-date>2023-08-15</due-date>
+      <payment-received-date>2023-08-14</payment-received-date>
+      <amount-paid>235.97</amount-paid>
+      <status>Paid On Time</status>
+      <payment-method>AutoPay</payment-method>
+    </payment>
+    
+    <payment>
+      <billing-month>July 2023</billing-month>
+      <amount-due>235.97</amount-due>
+      <due-date>2023-07-15</due-date>
+      <payment-received-date>2023-07-12</payment-received-date>
+      <amount-paid>235.97</amount-paid>
+      <status>Paid On Time</status>
+      <payment-method>AutoPay</payment-method>
+    </payment>
+    
+    <!-- First Bill - Promotional Pricing -->
+    <payment>
+      <billing-month>June 2023</billing-month>
+      <amount-due>199.99</amount-due>
+      <due-date>2023-06-15</due-date>
+      <payment-received-date>2023-06-15</payment-received-date>
+      <amount-paid>199.99</amount-paid>
+      <status>Paid On Time</status>
+      <payment-method>Credit Card</payment-method>
+      <notes>Initial promotional pricing applied</notes>
+    </payment>
+  </payments>
+  
+  <payment-summary>
+    <total-on-time-payments>7</total-on-time-payments>
+    <total-late-payments>1</total-late-payments>
+    <total-missed-payments>1</total-missed-payments>
+    <current-outstanding-balance>546.94</current-outstanding-balance>
+    <autopay-status>Disabled since 2023-12-01</autopay-status>
+  </payment-summary>
+  
+</payment-history>

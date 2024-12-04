@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order-history>
+  <customer>
+    <id>78901</id>
+    <name>Sarah Wilson</name>
+    <address>456 Oak Avenue, Springfield, USA</address>
+    <payment-history>
+      <status>Delinquent</status>
+      <missed-payments>2</missed-payments>
+      <last-payment-date>2023-12-15</last-payment-date>
+    </payment-history>
+  </customer>
+  <services>
+    <service>
+      <type>Internet</type>
+      <plan>Fiber 500Mbps Premium</plan>
+      <status>Active - Payment Required</status>
+      <start-date>2023-06-01</start-date>
+      <contract-length>24 months</contract-length>
+      <early-termination-fee>350.00</early-termination-fee>
+    </service>
+    <service>
+      <type>TV</type>
+      <plan>Basic Package</plan>
+      <status>Active - Payment Required</status>
+      <start-date>2023-06-01</start-date>
+      <contract-length>12 months</contract-length>
+      <early-termination-fee>150.00</early-termination-fee>
+    </service>
+    <service>
+      <type>Mobile</type>
+      <plan>International Plus</plan>
+      <status>Active - Payment Required</status>
+      <start-date>2023-06-01</start-date>
+      <contract-length>24 months</contract-length>
+      <features>
+        <feature>International Calling</feature>
+        <feature>Unlimited Data</feature>
+        <feature>5G Access</feature>
+      </features>
+      <early-termination-fee>400.00</early-termination-fee>
+    </service>
+  </services>
+  <account-notes>
+    <note>
+      <date>2024-02-01</date>
+      <type>Payment Notice</type>
+      <content>Second payment reminder sent - Account at risk of service suspension</content>
+    </note>
+    <note>
+      <date>2024-01-15</date>
+      <type>Late Fee</type>
+      <content>Late fee applied for January payment</content>
+    </note>
+    <note>
+      <date>2023-12-15</date>
+      <type>Late Fee</type>
+      <content>Late fee applied for December payment - Subsequently paid</content>
+    </note>
+  </account-notes>
+</order-history>
